@@ -1,19 +1,20 @@
 import * as React from 'react'
-
+import { Button } from 'antd'
 
 export default class App extends React.Component<any, any> {
-  render() {
+    render() {
 
-    return (
-      <div>
+        return (
+            <div>
           hello 12e e
-          {
-            this.props.a
-          }
-          {
-            this.props.b
-          }
-      </div>
-    )
-  }
+                {
+                    this.props.a
+                }
+                {
+                    this.props.b
+                }
+                <Button>btn</Button>
+            </div>
+        )
+    }
 }

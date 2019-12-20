@@ -1,6 +1,7 @@
 import * as ReactDOM from 'react-dom'
 import * as React from 'react'
 import App from './App'
+import 'antd/dist/antd.less'
 
 ReactDOM.render(
     <App {...{a: 1, b: 2}}/>

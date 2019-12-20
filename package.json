@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "react-ts dev",
-    "build": "react-ts build"
+    "dev": "set host=0.0.0.0&&set port=6000&&react-ts dev",
+    "build:test": "set NODE_ENV=test&&react-ts build",
+    "build": "set publicPath=./&&react-ts build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "zdean-react-ts": "^0.0.1"
+    "zdean-react-ts": "^0.1.0"
   }
 }

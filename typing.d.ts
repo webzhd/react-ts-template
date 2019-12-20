@@ -1,0 +1,1 @@
+declare const web_env: string
