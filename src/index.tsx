@@ -1,7 +1,7 @@
 import * as ReactDOM from 'react-dom'
 import * as React from 'react'
 import App from './App'
-import 'antd/dist/antd.less'
+import 'antd/dist/antd.css'
 
 ReactDOM.render(
     <App {...{a: 1, b: 2}}/>
@@ -9,6 +9,6 @@ ReactDOM.render(
     document.getElementById('root')
 )
 
-if (module.hot) {
-    module.hot.accept();
-}
+// if (module.hot) {
+//     module.hot.accept();
+// }
