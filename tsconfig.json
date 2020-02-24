@@ -20,7 +20,6 @@
       "jsx": "react"
     },
     "include": [
-        "./src/**/*",
-        "./typing.d.ts"
+        "./src/**/*"
     ]
 }

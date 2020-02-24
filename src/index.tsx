@@ -1,14 +1,15 @@
-import * as ReactDOM from 'react-dom'
-import * as React from 'react'
-import App from './App'
-import 'antd/dist/antd.css'
+import * as ReactDOM from 'react-dom';
+import * as React from 'react';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+import 'antd/dist/antd.css';
 
-ReactDOM.render(
-    <App {...{a: 1, b: 2}}/>
-    ,
-    document.getElementById('root')
-)
+console.log(WEB_ENV);
 
-// if (module.hot) {
-//     module.hot.accept();
-// }
+ReactDOM.render(<App/>, document.getElementById('root'));
+
+serviceWorker.unregister();
+
+if (module.hot) {
+    module.hot.accept();
+}
